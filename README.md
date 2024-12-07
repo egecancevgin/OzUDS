@@ -1,14 +1,14 @@
 # OzU CS552 Project
 
 ## Files and Folders Structure:
-`main.py`: Machine Learning Operation happens in this file, after the normalization phases in utility_functions.py.
-`requirements.txt`: Required Python packages and their versions.
-`utility_function.py`: Utility functions for data normalization, took over 30 hours to handle but they are done in Turkish. Also they need other datasets that I currently cannot provide because it is such a hassle to turn them all to turkish and encrypt them :).
-`app/`: App folder consists of FastAPI model deployments.
-`app/main.py`: Model deployment file that uses FastAPI Framework.
-`app/templates/index.html`: Web page front-end HTML file.
-`app/static/styles.css`: Web page front-end CSS file.
-`.pkl` files are for model and encoder object to inverse and make prediction.
+    - `main.py`: Machine Learning Operation happens in this file, after the normalization phases in utility_functions.py.
+    - `requirements.txt`: Required Python packages and their versions.
+    - `utility_function.py`: Utility functions for data normalization, took over 30 hours to handle but they are done in Turkish. Also they need other datasets that I currently cannot provide because it is such a hassle to turn them all to turkish and encrypt them :).
+    - `app/`: App folder consists of FastAPI model deployments.  
+    - `app/main.py`: Model deployment file that uses FastAPI Framework.
+    - `app/templates/index.html`: Web page front-end HTML file.
+    - `app/static/styles.css`: Web page front-end CSS file.
+    - `.pkl` files are for model and encoder object to inverse and make prediction.
 
  
 ## For Linux
