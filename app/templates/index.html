@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yapay Zeka Destekli Envanter Uygulaması</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Yapay Zeka Destekli Envanter Uygulaması</h2>
+            <div class="user">
+                <img src="https://raw.githubusercontent.com/egecancevgin/bb_senaryolar/main/ttke.png" alt="User Icon">
+                <p>Merhaba, Kullanıcı</p>
+                <button>Çıkış Yap</button>
+            </div>
+        </div>
+        <div class="main">
+            <form action="/submit" method="post">
+                <label for="ip">IP:</label>
+                <input type="text" id="ip" name="ip" required>
+            
+                <label for="hostname">Hostname:</label>
+                <input type="text" id="hostname" name="hostname">
+            
+                <label for="domain">Domain:</label>
+                <input type="text" id="domain" name="domain">
+            
+                <label for="servicename">ServiceName:</label>
+                <input type="text" id="servicename" name="servicename">
+            
+                <label for="serverrole">ServerRole:</label>
+                <input type="text" id="serverrole" name="serverrole">
+            
+                <label for="cluster">Cluster:</label>
+                <input type="text" id="cluster" name="cluster">
+            
+                <label for="environment">Environment:</label>
+                <input type="text" id="environment" name="environment">
+            
+                <button type="submit">Application Contact Bul</button>
+            </form>
+            <div class="results">
+                <h3>Bulgular:</h3>
+                <ul>
+                    {% if results %}
+                        {% for key, value in results.items() %}
+                            <li><strong>{{ key }}:</strong> {{ value }}</li>
+                        {% endfor %}
+                    {% else %}
+                        <li>Henüz veri yok.</li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
