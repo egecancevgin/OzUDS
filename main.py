@@ -142,7 +142,7 @@ def lstm_train(df, le, dep):
 
 def main():
     """ Driver function """
-    df = pd.read_csv("./datasets/prodmail_env.csv")
+    df = pd.read_csv("./datasets/env.csv")
     dependent = "Contact"
     indeps = [
         "Dom", "Name", "Address", "OSDistro", "Department",
