@@ -45,10 +45,10 @@ def appcontact_normalizasyonu(csvfile):
     df = pd.read_csv(csvfile)
 
     df["Contact"] = df["Contact"].astype(str).str.split(
-        "@etiya", n=1
+        "@fake", n=1
     ).str[0]
     df["Contact"] = df["Contact"].astype(str).str.split(
-        "@i2i", n=1
+        "@fake2fake", n=1
     ).str[0]
     df['Contact'] = df[
         'Contact'
