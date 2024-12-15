@@ -88,4 +88,4 @@ cd app
 python -m uvicorn app.main:app --reload
 ```
 
-
+The presentation is in the same folder with the name DS_OzU.pdf, it is working just make sure you download it.
